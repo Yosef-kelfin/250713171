@@ -24,7 +24,14 @@
 }
 
 .salam:hover {
-    color: #2b59af;
+    color: #e5cc0e;
     transform: scale(1.1);
     transition: all 0.3s ease;
+}
+
+.terima-kasih {
+    font-size: 16px;
+    color: #f4cb14;
+    margin: 15px;
+    cursor: pointer;
 }

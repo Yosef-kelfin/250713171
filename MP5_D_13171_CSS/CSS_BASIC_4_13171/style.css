@@ -21,12 +21,14 @@
     color: #442323;
     margin: 15px;
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .salam:hover {
     color: #e5cc0e;
     transform: scale(1.1);
     transition: all 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .terima-kasih {
@@ -34,4 +36,5 @@
     color: #f4cb14;
     margin: 15px;
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Kegiatan Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <h1 class="form-title">Formulir Pendaftaran Kegiatan</h1>
+
+    <form method="post" action="" enctype="multipart/form-data">
+
+        <table cellspacing="0" cellpadding="8" border="1" style="border-collapse:collapse; width:100%; border: 1px solid #ddd;">
+
+            <!-- SECTION 1: DATA PENDAFTAR -->
+            <tr>
+                <td colspan="2" style="background-color: var(--warna-1); color: white; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; padding: 10px;">
+                    Data Pendaftar
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:32%;">
+                    <label for="nama"><strong>Nama Lengkap</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="nama" name="nama" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="nim"><strong>NIM</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="nim" name="nim" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="prodi"><strong>Program Studi</strong></label>
+                </td>
+                <td>
+                    <select id="prodi" name="prodi">
+                        <option value="Informatika">Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Jenis Kelamin</strong>
+                </td>
+                <td>
+                    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" />
+                    <label for="laki">Laki-laki</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" />
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+
+            <!-- SECTION 2: PILIHAN KEGIATAN -->
+            <tr>
+                <td colspan="2" style="background-color: var(--warna-1); color: white; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; padding: 10px; border-top: 3px solid #ccc;">
+                    Pilihan Kegiatan
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Jenis Kegiatan</strong>
+                </td>
+                <td>
+                    <input type="radio" id="seminar" name="jenis_kegiatan" value="Seminar" />
+                    <label for="seminar">Seminar</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="pelatihan" name="jenis_kegiatan" value="Pelatihan" />
+                    <label for="pelatihan">Pelatihan</label>
+                    &nbsp;&nbsp;
+                    <input type="radio" id="diskusi" name="jenis_kegiatan" value="Diskusi" />
+                    <label for="diskusi">Diskusi</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <strong>Bidang Minat</strong>
+                </td>
+                <td>
+                    <p>
+                        <input type="checkbox" id="teknologi" name="bidang_minat" value="Teknologi" />
+                        <label for="teknologi">Teknologi</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="organisasi" name="bidang_minat" value="Organisasi" />
+                        <label for="organisasi">Organisasi</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="karier" name="bidang_minat" value="Karier" />
+                        <label for="karier">Pengembangan Karier</label>
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="waktu"><strong>Waktu Kegiatan</strong></label>
+                </td>
+                <td>
+                    <select id="waktu" name="waktu">
+                        <option value="Pagi">Pagi</option>
+                        <option value="Siang">Siang</option>
+                        <option value="Sore">Sore</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- SECTION 3: KELENGKAPAN PENDAFTARAN -->
+            <tr>
+                <td colspan="2" style="background-color: var(--warna-1); color: white; font-weight: bold; text-align: center; text-transform: uppercase; letter-spacing: 1px; padding: 10px; border-top: 3px solid #ccc;">
+                    Kelengkapan Pendaftaran
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="harapan">
+                        <strong>Harapan Mengikuti Kegiatan</strong>
+                    </label>
+                </td>
+                <td>
+                    <textarea id="harapan" name="harapan" rows="6" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="bukti">
+                        <strong>Bukti Pembayaran</strong>
+                    </label>
+                </td>
+                <td>
+                    <input type="file" id="bukti" name="bukti" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center; padding: 15px;">
+                    <input class="tombol-submit" type="submit" value="Kirim Pendaftaran" />
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>

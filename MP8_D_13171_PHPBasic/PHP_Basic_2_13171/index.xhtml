@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>PHP Basic 2 - Pengkondisian Fungsi</title>
+</head>
+<body>
+    <h2>Form Perhitungan</h2>
+    <form action="index.php" method="POST">
+        <label>Masukkan Angka 1:</label><br/>
+        <input type="text" name="angka1" /><br/><br/>
+        <label>Masukkan Angka 2:</label><br/>
+        <input type="text" name="angka2" /><br/><br/>
+        <label>Operasi:</label><br/>
+        <select name="operasi">
+            <option value="tambah">Tambah (+)</option>
+            <option value="kurang">Kurang (-)</option>
+            <option value="kali">Kali (*)</option>
+            <option value="bagi">Bagi (/)</option>
+        </select><br/><br/>
+        <input type="submit" value="Hitung" />
+    </form>
+</body>
+</html>

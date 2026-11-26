@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+
+        <style type="text/css">
+            body {
+                font-family: Arial, sans-serif;
+                margin: 30px;
+            }
+
+            .hasil {
+                margin-top: 15px;
+                padding: 10px;
+                width: 300px;
+                border: 1px solid gray;
+            }
+
+            button,
+            select {
+                padding: 8px;
+                margin: 5px;
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $('#btnHobi').click(function () {
+                    const nama = $('#nama').val();
+                    if (nama === '') {
+                        $('#hasilNama').text('Nama belum diisi!').css('color', 'red');
+                    } else {
+                        $('#hasilNama')
+                            .text('Halo, ' + nama + '! Selamat Belajar jQuery!')
+                            .css('color', 'green');
+                    }
+                });
+                $('#pilihHobi').change(function () {
+                    const hobi = $(this).val();
+                    if (hobi === '') {
+                        $('#hasilHobi').text('Hobi anda akan tampil di sini').css('color', 'black');
+                    } else {
+                        $('#hasilHobi')
+                            .text('Hobi favorit anda adalah ' + hobi + '.')
+                            .css('color', 'purple');
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h2>Informasi Pengguna</h2>
+        <h3>1. Masukkan nama Anda:</h3>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" />
+        <button id="btnHobi">Tampilkan Nama</button>
+        <p id="hasilNama" class="hasil">Nama Anda akan tampil di sini</p>
+        <hr />
+        <h3>2. Pilih hobi</h3>
+        <label for="pilihHobi">Hobi:</label>
+        <select id="pilihHobi">
+            <option value="">-- Pilih Hobi --</option>
+            <option value="Bermain Musik">Bermain Musik</option>
+            <option value="Olahraga">Olahraga</option>
+            <option value="Memasak">Memasak</option>
+        </select>
+        <p id="hasilHobi" class="hasil">Hobi Anda akan tampil di sini</p>
+    </body>
+</html>
